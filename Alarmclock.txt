@@ -1,0 +1,15 @@
+
+import datetime
+Hour = int(input("Set hour: "))
+Minute = int(input("Set minute: "))
+amPM = str(input("am or pm?: "))
+
+if amPM == "pm":
+    Hour = Hour + 12
+
+while 2 == 2:
+    if Hour == datetime.datetime.now().hour and Minute == datetime.datetime.now().minute:
+        print("Time to Wake Up!")
+        break
+
+        print("Done")
